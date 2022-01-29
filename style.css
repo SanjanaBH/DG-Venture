@@ -1,0 +1,67 @@
+html,
+body {
+  background-color: black;
+}
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+h2 {
+  font-family: sans-serif;
+  color: #fff;
+}
+.carousel {
+  /* width: 90%;
+  margin: 0px auto; */
+}
+.slick-slide {
+  margin: 10px;
+}
+.slick-slide img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+.wrapper .slick-dots li button:before {
+  font-size: 20px;
+  color: white;
+}
+
+.center {
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.center:hover p {
+  /* margin-top: -120px !important; */
+  height: auto;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.details {
+  display: none;
+  line-height: 16px;
+  height: auto;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.center:hover .details {
+  display: block !important;
+  font-size: 14px;
+  text-align: justify;
+  transition: 0.3s ease-in-out;
+  padding-top: 8px;
+}
+
+@media (max-width: 1250px) {
+  .details {
+    display: none !important;
+  }
+
+  .center:hover .details {
+    display: none !important;
+  }
+}
